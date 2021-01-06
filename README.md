@@ -2,7 +2,7 @@
 
 > This Web Application stores your time sensitive to do list to your local storage.
 
----
+![](./Gif/DayGif.gif)
 
 ### Table of Contents
 

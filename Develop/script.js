@@ -1,13 +1,13 @@
 $(document).ready(function () {
   // get the date from moment
-  var now = moment().format("MMMM Do, YYYY");
+  var date = moment().format("MMMM Do, YYYY");
 
   // get the time from moment
-  var nowHour24 = moment().format("H");
+  var currentTime = moment().format("H");
 
   // Target <p> with date and put it on the page
   var headingDate = $("#currentDay");
-  headingDate.text(now);
+  headingDate.text(date);
 
   // Get stored items from localStorage
   var storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
@@ -28,7 +28,7 @@ $(document).ready(function () {
   // build calendar by row for fix set of hours
   for (var hour = 0; hour <= 23; hour++) {
     // index for array use offset from hour
-    var index = hour - 9;
+    var index = hour;
 
     // build row components
     var createDivRow = $("<div>");
@@ -117,9 +117,9 @@ $(document).ready(function () {
 
   // function to update row color
   function updateRowColor(divRow, hour) {
-    if (hour < nowHour24) {
+    if (hour < currentTime) {
       $(divRow).addClass("past");
-    } else if (hour > nowHour24) {
+    } else if (hour > currentTime) {
       $(divRow).addClass("future");
     } else {
       $(divRow).addClass("present");
@@ -133,7 +133,7 @@ $(document).ready(function () {
 
     var dataSave = $(this).attr("data-save");
 
-    var inputId = `#input-${dataSave}`;
+    var inputId = "#input-" + dataSave;
     var value = $(inputId).val();
 
     planTextArr[dataSave] = value;
