@@ -1,0 +1,103 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  /* background-color: #777777; */
+}
+
+/* Where text is written */
+textarea {
+  background: transparent;
+  border: none;
+  border-left: 3px solid black;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+/* Div holding main content */
+#plannerContainer {
+  background-color: #313130;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  padding: 50px 60px;
+  border-radius: 30px;
+}
+
+/* style container with textarea */
+.description {
+  white-space: pre-wrap;
+  color: black;
+  font-size: 1.4rem;
+  height: 100%;
+  width: 100%;
+}
+
+.time-block {
+  text-align: center;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-size: 1em;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #06aed5;
+  font-size: 1.5em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* no padding for boxes */
+.col-md-1,
+.col-md-2,
+.col-md-9 {
+  padding: 0;
+}
