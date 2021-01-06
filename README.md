@@ -48,10 +48,10 @@ Overall a extremely challenging project, but I can away with a better understand
 ## Links
 
 Link to site:
-https://deleonfrancis.github.io/Password_Generator/
+https://deleonfrancis.github.io/Work_Day_Scheduler/
 
 Link to GitHub repository:
-https://github.com/deleonfrancis/Password_Generator
+https://github.com/deleonfrancis/Work_Day_Scheduler
 
 [Back To The Top](#read-me-template)
 
